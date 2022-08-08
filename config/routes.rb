@@ -5,6 +5,7 @@ Rails.application.routes.draw do
     # post "todos", to: "todos#create"
     # get "todos/:id", to: "todos#show"
 
+    resources :users
     resources :todos
-    resources :user
+
   end
