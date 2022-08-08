@@ -14,4 +14,10 @@ class UsersController < ApplicationController
     render plain: response_text
   end
 
+  def login
+    email = params[:email]
+    password = params[:password]
+    render plain: User.where(email: email, password: password).exists? "true" : "false"
+  end
+
 end
