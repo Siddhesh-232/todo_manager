@@ -1,0 +1,117 @@
+body {
+  font-family: sans-serif;
+  max-width: 600px;
+  margin-top: 32px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.TodoList-title {
+  font-family: OpenSans-Semibold;
+  font-size: 20px;
+  color: #453C52;
+  letter-spacing: 0.14px;
+}
+
+.AddTodo {
+  background: #FFFFFF;
+  border: 1px solid #BFB8CC;
+  border-radius: 4px;
+  border-radius: 4px;
+  height: 32px;
+  width: 190px;
+}
+
+.AddTodoDate {
+  background: #FFFFFF;
+  border: 1px solid #BFB8CC;
+  border-radius: 4px;
+  border-radius: 4px;
+  height: 32px;
+  width: 190px;
+  margin-left: 10px;
+}
+
+.button {
+  background: #48BB78;
+  border-radius: 4px;
+  border-radius: 4px;
+  height: 32px;
+  width: 72px;
+  position: calc(628px, 99px);
+  margin-left: 10px;
+  border-color: transparent;
+}
+
+.TodoSection-title {
+  font-family: OpenSans-Semibold;
+  font-size: 14px;
+  color: #453C52;
+  letter-spacing: 0.1px;
+
+}
+
+.TodoSection-nos {
+  font-family: OpenSans;
+  font-size: 12px;
+  color: #453C52;
+  letter-spacing: 0.09px;
+}
+
+.TodoCount {
+  display: flex;
+}
+
+.TodoList-list {
+  font-family: OpenSans;
+  font-size: 14px;
+  color: #453C52;
+  letter-spacing: 0.1px;
+  margin-left: 20px;
+}
+
+.description {
+  font-family: OpenSans;
+  font-size: 12px;
+  color: #C53030;
+  letter-spacing: 0.09px;
+  width: 8.6px;
+  height: 12.2px;
+  border: 1px;
+}
+
+.DeleteIMG {
+  border: 1px;
+  width: 8.6px;
+  height: 12.2px;
+}
+
+:hover.TodoList-list {
+  background: #F1EDF7;
+  border-radius: 4px;
+  border-radius: 4px;
+}
+
+.date {
+  font-family: OpenSans;
+  font-size: 12px;
+  color: #726A7E;
+  letter-spacing: 0.09px;
+  border: 1px;
+}
+
+.AddButton {
+  font-family: OpenSans-Semibold;
+  font-size: 14px;
+  color: #FFFFFF;
+  letter-spacing: 0.1px;
+  margin: auto;
+}
+
+.TodoImg {
+  -ms-flex: 1;
+  flex: 1;
+  background: #F1EDF7;
+  border-radius: 4px;
+  border-radius: 4px;
+}

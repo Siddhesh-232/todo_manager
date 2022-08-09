@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todos</title>
+    <link rel="stylesheet" type="text/css" href="todo-app.css">
+  </head>
+
+  <body>
+    <main class="TodoPageMain">
+      <h1 class="TodoList-title">My To-do List</h1>
+      <article class="TodoCount">
+        <input type="textbox" class="AddTodo" placeholder="What's next?"></input>
+        <input type="date" class="AddTodoDate"></input>
+        <button class="button">
+          <p class="AddButton">Add</p>
+        </button>
+      </article>
+      <section class="TodoSection">
+        <article class="TodoCount">
+          <p class="TodoSection-title">Due Today</p>
+          <p class="TodoSection-nos">&nbsp;&nbsp;0/4</p>
+        </article>
+
+        <article class="TodoCount">
+          <input type="checkbox" class="TodoList-list">Type something&nbsp;&nbsp;</input>
+          <p class="description">Overdue</p>
+        </article>
+        <article class="TodoImg">
+          <input type="checkbox" class="TodoList-list">Type something&nbsp;&nbsp;</input>
+          <img class="DeleteIMG" src="delete.png" />
+        </article>
+      </section>
+      <section class="TodoSection">
+        <article class="TodoCount">
+          <p class="TodoSection-title">Due Tomorrow</p>
+          <p class="TodoSection-nos">&nbsp;&nbsp;0/3</p>
+        </article>
+        <input type="checkbox" class="TodoList-list">Type something</input>
+      </section>
+      <section class="TodoSection">
+        <article class="TodoCount">
+          <p class="TodoSection-title">Remaining</p>
+          <p class="TodoSection-nos">&nbsp;&nbsp;0/3</p>
+        </article>
+        <article class="TodoCount">
+          <input type="checkbox" class="TodoList-list">Type something</input>
+          <p class="date">&nbsp;&nbsp;Jan 21</p>
+        </article>
+        <article class="TodoCount">
+          <input type="checkbox" class="TodoList-list">Type something
+          <p class="date">&nbsp;&nbsp;Jan 22</p>
+        </article>
+        <article class="TodoCount">
+          <input type="checkbox" class="TodoList-list">Type something
+          <p class="date">&nbsp;&nbsp;Jan 23</p>
+        </article>
+      </section>
+    </main>
+  </body>
+
+</html>
