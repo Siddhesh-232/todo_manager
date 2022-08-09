@@ -17,7 +17,7 @@ class UsersController < ApplicationController
   def login
     email = params[:email]
     password = params[:password]
-    render plain: User.where(email: email, password: password).exists? "true" : "false"
+    render plain: User.where(email: email, password: password).exists?
   end
 
 end
