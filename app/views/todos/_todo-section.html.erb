@@ -1,23 +1,24 @@
 <section class="TodoSection">
-      <div class="TodoSectionTitle">
-        <p class="TodoSectionTitle-text"> <%= section_title %> </p>
-        <p class="TodoSectionTitle-remainingCount"><%= todos.completed.count %>/<%= todos.count %></p>
-      </div>
-
-      <ul>
-        <% todos.each do |todo| %>
-          <li class="TodoItem-container">
-            <input class="TodoItem-checkbox" type="checkbox" />
+  <div class="TodoSectionTitle">
+    <p class="TodoSectionTitle-text"><%= section_title %></p>
+    <p class="TodoSectionTitle-remainingCount"><%= todos.completed.count %> / <%= todos.count %></p>
+  </div>
+  <ul>
+    <% todos.each do |todo| %>
+      <li class="TodoItem">
+        <label class="TodoItem-container">
+          <input type="checkbox" class="TodoItem-checkbox" <%= todo.completed ? 'checked' : nil %>>
+          <p class="TodoItem-text <%= todo.completed ? 'TodoItem-text--completed': nil %>">
             <%= todo.todo_text %>
-            <% if show_due_date %>
-            <p class="TodoItem-dueDate"><%= todo.due_date.to_fs(:short) %>
-            <% end %>
-            <a href="javascript:void(0)" class="TodoItem-delete">
-              <img src="trashcan.svg" />
-            </a>
-            </label>
-          </li>
-        <% end %>
-
-      </ul>
+          </p>
+          <% if show_due_date %>
+            <p class="TodoItem-dueDate"><%= todo.due_date.to_fs(:short) %></p>
+          <% end %>
+          <a href="javascript:void(0)" class="TodoItem-delete">
+            <img src="/trashcan.png" class="TodoItem-deleteImage">
+          </a>
+        </label>
+      </li>
+    <% end %>
+  </ul>
 </section>
